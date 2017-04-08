@@ -11,8 +11,8 @@ var turns = 9;
 
 var currentPick = "";
 var lettersInPick = [];
-var currentMatch = [];
-var wrongGuesses = [];
+// var currentMatch = [];
+// var wrongGuesses = [];
 
 
 function play() {
@@ -77,13 +77,13 @@ function matchDone() {
         wins++;
         alert("You're the champion!");
 
-        document.getElementById("wins").innerHTML = wins;
+        document.getElementById("winCounter").innerHTML = "Wins: " + wins;
         play();
     } else if (turns == 0) {
         losses++;
         alert("You've been pinned!");
 
-        document.getElementById("losses").innerHTML = losses;
+        document.getElementById("lossCounter").innerHTML = "Losses: " + losses;
         play();
     }
 
@@ -92,7 +92,7 @@ function matchDone() {
 play();
 
 
-document.onkeyup = function() {
+document.onkeyup = function(event) {
     letterChosen = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetter(letterChosen);
 
