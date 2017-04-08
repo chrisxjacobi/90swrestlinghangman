@@ -1,11 +1,34 @@
 var wrestlers = ["yokozuna", "hakushi", "doink", "vader", "raven", "mabel", "kamala", "tatanka", "virgil", "sting", "goldust",
-    "taz", "goldberg", "kane", "diesel", "mankind"];
+    "taz", "goldberg", "kane", "diesel", "mankind"
+];
+
+/*
+var wrestlers = [
+    {name: "yokozuna", picture: "yokozuna.jpg"},
+    {name: "hakushi", picture: "hakushi.jpg"},
+    {name: "doink", picture: "doink.jpg"},
+    {name: "vader", picture: "vader.jpg"},
+    {name: "raven", picture: "raven.jpg"},
+    {name: "mabel", picture: "mabel.jpg"},
+    {name: "kamala", picture: "kamala.jpg"},
+    {name: "tatanka", picture: "tatanka.jpg"},
+    {name: "virgil", picture: "virgil.jpg"},
+    {name: "sting", picture: "sting.jpg"},
+    {name: "goldust", picture: "goldust.jpg"},
+    {name: "taz", picture: "taz.jpg"},
+    {name: "goldberg", picture: "goldberg.jpg"},
+    {name: "kane", picture: "kane.jpg"},
+    {name: "diesel", picture: "diesel.jpg"},
+    {name: "mankind", picture: "mankind.jpg"},
+
+];
+*/
 
 
 
 var wins = 0;
 var losses = 0;
-var turns = 9;
+var turns = 7;
 
 var currentPick = "";
 var lettersInPick = [];
@@ -14,7 +37,7 @@ var lettersInPick = [];
 
 
 function play() {
-    turns = 9;
+    turns = 7;
 
     currentPick = wrestlers[Math.floor(Math.random() * wrestlers.length)];
     lettersInPick = currentPick.split("");
@@ -76,6 +99,11 @@ function matchDone() {
         alert("You're the champion!");
 
         document.getElementById("winCounter").innerHTML = "Wins: " + wins;
+
+
+        //document.querySelector("#correctWrestler").innerHTML = '<img class="wrestlerImage" src'
+
+
         play();
     } else if (turns == 0) {
         losses++;
