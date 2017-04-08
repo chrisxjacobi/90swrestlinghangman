@@ -18,7 +18,11 @@
 	padding: 10px;
 }
 
-.jumbotron {
-	color: #ABB94F;
-	background-color: transparent !important;
+#tally, #currentWrestler {
+	margin-top: 5%;
+	margin-left: 5%;
+	font-family: Candal;
+	
 }
+
+

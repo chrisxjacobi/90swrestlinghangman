@@ -18,19 +18,31 @@
     </div>
     </br>
     <div class="jumbotron">
-        <div class="tally">
-            <h4 id="winCounter">Wins: </h4>
-            <h4 id="lossCounter">Losses: </h4>
-            <h4 id="kickouts">Kickouts remaining: 9</h4>
-            <br>
-            <h4 id="wordBlanks">_ _ _ _ _ _ _ _</h4>
-            <h4 id="lettersGuessed">Letters chosen: </h4>
+        <h3 class="text-center">Guess the 1990's era pro wrestling superstar and live in glory!</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="currentWrestler">
+                        <h4 id="wordBlanks">_ _ _ _ _ _ _ _</h4>
+                        <h4 id="lettersGuessed">Letters Guessed: </h4>
+                        <h4 id="kickouts">Kickouts Remaining: 9</h4>
+                    </div>
+                    <br>
+                    <div id="tally">
+                        <h4 id="winCounter">Wins: </h4>
+                        <h4 id="lossCounter">Losses: </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="correctWrestler">
 
-
+                    </div>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    <script src="logic.js"></script>
+        <script src="logic.js"></script>
 </body>
 
 </html>

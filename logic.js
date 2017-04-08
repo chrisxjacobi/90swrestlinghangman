@@ -1,7 +1,5 @@
-var wrestlers = ["yokozuna", "vader", "raven", "mabel",
-    "kamala", "tatanka", "sting", "goldust",
-    "tazz", "goldberg", "kane", "diesel"
-];
+var wrestlers = ["yokozuna", "hakushi", "doink", "vader", "raven", "mabel", "kamala", "tatanka", "virgil", "sting", "goldust",
+    "taz", "goldberg", "kane", "diesel", "mankind"];
 
 
 
@@ -18,7 +16,7 @@ var lettersInPick = [];
 function play() {
     turns = 9;
 
-    currentPick = wrestlers[Math.floor(Math.random() * wrestlers.length - 1)];
+    currentPick = wrestlers[Math.floor(Math.random() * wrestlers.length)];
     lettersInPick = currentPick.split("");
     blanks = lettersInPick.length;
 
