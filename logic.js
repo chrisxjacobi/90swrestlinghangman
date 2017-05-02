@@ -37,7 +37,7 @@ var lettersInPick = [];
 
 
 function play() {
-    turns = 7;
+    turns = 9;
 
     currentPick = wrestlers[Math.floor(Math.random() * wrestlers.length)];
     lettersInPick = currentPick.split("");
